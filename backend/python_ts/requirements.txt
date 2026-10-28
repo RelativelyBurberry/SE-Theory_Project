@@ -1,0 +1,28 @@
+# AlphaForge Insight - Python Time-Series ML Service Dependencies
+# 
+# Install with: pip install -r requirements.txt
+
+# Core ML libraries
+scikit-learn>=1.0.0
+xgboost>=1.5.0
+tensorflow>=2.10.0
+
+# Time-series specific
+arch>=5.0.0
+statsmodels>=0.13.0
+
+# Web framework
+fastapi>=0.100.0
+uvicorn>=0.20.0
+pydantic>=2.0.0
+
+# Data handling
+numpy>=1.21.0
+pandas>=1.3.0
+scipy>=1.7.0
+
+# HTTP client (for testing)
+httpx>=0.24.0
+
+# Latest-available daily OHLCV for the Live Market Monitor
+yfinance>=0.2.50

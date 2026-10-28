@@ -1,0 +1,13 @@
+-- AlphaForge Insight — backend database schema (APPLIED to Neon PostgreSQL)
+--
+-- STATUS: APPLIED 2026-09-12. This file is a pointer for the backend team.
+-- The authoritative schema for the Review 1 phase lives in the
+-- repository-root file  database/init.sql  (APPLIED via database/apply_schema.R
+-- to the project's Neon PostgreSQL database; non-destructive, idempotent).
+--
+-- Applied tables (Phase 2): users, backtests, results.
+-- Future normalisation: strategies, trades, backtest_metrics.
+--
+-- Application code (backend/database/queries.R) already references these
+-- tables through parameterised queries. See also
+-- tests/backend/test_db_connection.R (schema verification).

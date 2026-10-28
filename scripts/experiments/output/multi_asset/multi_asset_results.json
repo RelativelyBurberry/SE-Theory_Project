@@ -1,0 +1,3632 @@
+{
+  "AAPL_close_to_close": {
+    "success": true,
+    "ticker": "AAPL",
+    "label_type": "close_to_close",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 7270.929016,
+          "total_return": -0.272907,
+          "cagr": -0.274342,
+          "sharpe": -0.799304,
+          "sortino": -1.121409,
+          "maximum_drawdown": -0.282226,
+          "win_rate": "NA",
+          "volatility": 0.350234,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 8377.821856,
+          "total_return": -0.162218,
+          "cagr": -0.163136,
+          "sharpe": -0.925525,
+          "sortino": -1.342035,
+          "maximum_drawdown": -0.198906,
+          "win_rate": 0.2,
+          "volatility": 0.194022,
+          "total_trades": 5
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 7992.089938,
+          "total_return": -0.200791,
+          "cagr": -0.201901,
+          "sharpe": -0.951259,
+          "sortino": -1.276961,
+          "maximum_drawdown": -0.217224,
+          "win_rate": 0.52,
+          "volatility": 0.230362,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 8851.14899,
+          "total_return": -0.114885,
+          "cagr": -0.115554,
+          "sharpe": -0.404002,
+          "sortino": -0.581328,
+          "maximum_drawdown": -0.252057,
+          "win_rate": "NA",
+          "volatility": 0.266382,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.633466,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 173,
+            "HOLD": 1394,
+            "SELL": 160
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 15072.496471,
+          "total_return": 0.50725,
+          "cagr": 0.509375,
+          "sharpe": 2.042954,
+          "sortino": 3.177266,
+          "maximum_drawdown": -0.150404,
+          "win_rate": "NA",
+          "volatility": 0.202942,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12047.415554,
+          "total_return": 0.204742,
+          "cagr": 0.205512,
+          "sharpe": 1.194853,
+          "sortino": 1.904849,
+          "maximum_drawdown": -0.121614,
+          "win_rate": 0.75,
+          "volatility": 0.14997,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 15030.846361,
+          "total_return": 0.503085,
+          "cagr": 0.50519,
+          "sharpe": 2.802889,
+          "sortino": 4.660616,
+          "maximum_drawdown": -0.07426,
+          "win_rate": 0.72,
+          "volatility": 0.143249,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 14971.047026,
+          "total_return": 0.497105,
+          "cagr": 0.499181,
+          "sharpe": 2.285252,
+          "sortino": 3.784669,
+          "maximum_drawdown": -0.119366,
+          "win_rate": 0.75,
+          "volatility": 0.176213,
+          "total_trades": 4
+        },
+        "rf_classification": {
+          "accuracy": 0.820717,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 215,
+            "HOLD": 1556,
+            "SELL": 207
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 13311.230851,
+          "total_return": 0.331123,
+          "cagr": 0.332431,
+          "sharpe": 1.307519,
+          "sortino": 2.016274,
+          "maximum_drawdown": -0.15307,
+          "win_rate": "NA",
+          "volatility": 0.224607,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12032.983467,
+          "total_return": 0.203298,
+          "cagr": 0.204063,
+          "sharpe": 1.151378,
+          "sortino": 1.791417,
+          "maximum_drawdown": -0.150316,
+          "win_rate": 0.333333,
+          "volatility": 0.155227,
+          "total_trades": 3
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 11803.736064,
+          "total_return": 0.180374,
+          "cagr": 0.181046,
+          "sharpe": 0.968746,
+          "sortino": 1.566423,
+          "maximum_drawdown": -0.115458,
+          "win_rate": 0.56,
+          "volatility": 0.166252,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 11671.675531,
+          "total_return": 0.167168,
+          "cagr": 0.167787,
+          "sharpe": 1.028748,
+          "sortino": 1.410916,
+          "maximum_drawdown": -0.117319,
+          "win_rate": "NA",
+          "volatility": 0.14208,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.880478,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 231,
+            "HOLD": 1782,
+            "SELL": 216
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.188489,
+          "ci_lower": 0.188489,
+          "ci_upper": 0.188489,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.85039,
+          "ci_lower": 0.85039,
+          "ci_upper": 0.85039,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.357377,
+          "ci_lower": 1.357377,
+          "ci_upper": 1.357377,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.195233,
+          "ci_lower": -0.195233,
+          "ci_upper": -0.195233,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": 0.081941,
+          "ci_lower": 0.081941,
+          "ci_upper": 0.081941,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.473569,
+          "ci_lower": 0.473569,
+          "ci_upper": 0.473569,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.784744,
+          "ci_lower": 0.784744,
+          "ci_upper": 0.784744,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.156945,
+          "ci_lower": -0.156945,
+          "ci_upper": -0.156945,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.160889,
+          "ci_lower": 0.160889,
+          "ci_upper": 0.160889,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.940126,
+          "ci_lower": 0.940126,
+          "ci_upper": 0.940126,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.650026,
+          "ci_lower": 1.650026,
+          "ci_upper": 1.650026,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.135647,
+          "ci_lower": -0.135647,
+          "ci_upper": -0.135647,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.183129,
+          "ci_lower": 0.183129,
+          "ci_upper": 0.183129,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.969999,
+          "ci_lower": 0.969999,
+          "ci_upper": 0.969999,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.538086,
+          "ci_lower": 1.538086,
+          "ci_upper": 1.538086,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.162914,
+          "ci_lower": -0.162914,
+          "ci_upper": -0.162914,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "AAPL_open_to_open": {
+    "success": true,
+    "ticker": "AAPL",
+    "label_type": "open_to_open",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 7270.929016,
+          "total_return": -0.272907,
+          "cagr": -0.274342,
+          "sharpe": -0.799304,
+          "sortino": -1.121409,
+          "maximum_drawdown": -0.282226,
+          "win_rate": "NA",
+          "volatility": 0.350234,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 8377.821856,
+          "total_return": -0.162218,
+          "cagr": -0.163136,
+          "sharpe": -0.925525,
+          "sortino": -1.342035,
+          "maximum_drawdown": -0.198906,
+          "win_rate": 0.2,
+          "volatility": 0.194022,
+          "total_trades": 5
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 7992.089938,
+          "total_return": -0.200791,
+          "cagr": -0.201901,
+          "sharpe": -0.951259,
+          "sortino": -1.276961,
+          "maximum_drawdown": -0.217224,
+          "win_rate": 0.52,
+          "volatility": 0.230362,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10570.785755,
+          "total_return": 0.057079,
+          "cagr": 0.057442,
+          "sharpe": 0.26972,
+          "sortino": 0.38414,
+          "maximum_drawdown": -0.20802,
+          "win_rate": 1,
+          "volatility": 0.244742,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.621514,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 174,
+            "HOLD": 1403,
+            "SELL": 150
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 15072.496471,
+          "total_return": 0.50725,
+          "cagr": 0.509375,
+          "sharpe": 2.042954,
+          "sortino": 3.177266,
+          "maximum_drawdown": -0.150404,
+          "win_rate": "NA",
+          "volatility": 0.202942,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12047.415554,
+          "total_return": 0.204742,
+          "cagr": 0.205512,
+          "sharpe": 1.194853,
+          "sortino": 1.904849,
+          "maximum_drawdown": -0.121614,
+          "win_rate": 0.75,
+          "volatility": 0.14997,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 15030.846361,
+          "total_return": 0.503085,
+          "cagr": 0.50519,
+          "sharpe": 2.802889,
+          "sortino": 4.660616,
+          "maximum_drawdown": -0.07426,
+          "win_rate": 0.72,
+          "volatility": 0.143249,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 11221.061588,
+          "total_return": 0.122106,
+          "cagr": 0.12255,
+          "sharpe": 0.868982,
+          "sortino": 1.241201,
+          "maximum_drawdown": -0.120126,
+          "win_rate": 1,
+          "volatility": 0.119017,
+          "total_trades": 2
+        },
+        "rf_classification": {
+          "accuracy": 0.832669,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 221,
+            "HOLD": 1560,
+            "SELL": 197
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 13311.230851,
+          "total_return": 0.331123,
+          "cagr": 0.332431,
+          "sharpe": 1.307519,
+          "sortino": 2.016274,
+          "maximum_drawdown": -0.15307,
+          "win_rate": "NA",
+          "volatility": 0.224607,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12032.983467,
+          "total_return": 0.203298,
+          "cagr": 0.204063,
+          "sharpe": 1.151378,
+          "sortino": 1.791417,
+          "maximum_drawdown": -0.150316,
+          "win_rate": 0.333333,
+          "volatility": 0.155227,
+          "total_trades": 3
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 11803.736064,
+          "total_return": 0.180374,
+          "cagr": 0.181046,
+          "sharpe": 0.968746,
+          "sortino": 1.566423,
+          "maximum_drawdown": -0.115458,
+          "win_rate": 0.56,
+          "volatility": 0.166252,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10161.317381,
+          "total_return": 0.016132,
+          "cagr": 0.016188,
+          "sharpe": -0.311899,
+          "sortino": -2.907868,
+          "maximum_drawdown": 0,
+          "win_rate": 1,
+          "volatility": 0.011561,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.804781,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 238,
+            "HOLD": 1782,
+            "SELL": 209
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.188489,
+          "ci_lower": 0.188489,
+          "ci_upper": 0.188489,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.85039,
+          "ci_lower": 0.85039,
+          "ci_upper": 0.85039,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.357377,
+          "ci_lower": 1.357377,
+          "ci_upper": 1.357377,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.195233,
+          "ci_lower": -0.195233,
+          "ci_upper": -0.195233,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": 0.081941,
+          "ci_lower": 0.081941,
+          "ci_upper": 0.081941,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.473569,
+          "ci_lower": 0.473569,
+          "ci_upper": 0.473569,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.784744,
+          "ci_lower": 0.784744,
+          "ci_upper": 0.784744,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.156945,
+          "ci_lower": -0.156945,
+          "ci_upper": -0.156945,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.160889,
+          "ci_lower": 0.160889,
+          "ci_upper": 0.160889,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.940126,
+          "ci_lower": 0.940126,
+          "ci_upper": 0.940126,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.650026,
+          "ci_lower": 1.650026,
+          "ci_upper": 1.650026,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.135647,
+          "ci_lower": -0.135647,
+          "ci_upper": -0.135647,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.065105,
+          "ci_lower": 0.065105,
+          "ci_upper": 0.065105,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.275601,
+          "ci_lower": 0.275601,
+          "ci_upper": 0.275601,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.427509,
+          "ci_lower": -0.427509,
+          "ci_upper": -0.427509,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.109382,
+          "ci_lower": -0.109382,
+          "ci_upper": -0.109382,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "MSFT_close_to_close": {
+    "success": true,
+    "ticker": "MSFT",
+    "label_type": "close_to_close",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 6946.534698,
+          "total_return": -0.305347,
+          "cagr": -0.306914,
+          "sharpe": -0.932539,
+          "sortino": -1.282355,
+          "maximum_drawdown": -0.371206,
+          "win_rate": "NA",
+          "volatility": 0.349542,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 7744.321716,
+          "total_return": -0.225568,
+          "cagr": -0.226794,
+          "sharpe": -1.425613,
+          "sortino": -1.907984,
+          "maximum_drawdown": -0.24929,
+          "win_rate": 0,
+          "volatility": 0.18288,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 7393.03584,
+          "total_return": -0.260696,
+          "cagr": -0.262079,
+          "sharpe": -1.205261,
+          "sortino": -1.620878,
+          "maximum_drawdown": -0.260696,
+          "win_rate": 0.4,
+          "volatility": 0.244239,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 7897.588051,
+          "total_return": -0.210241,
+          "cagr": -0.211396,
+          "sharpe": -0.590792,
+          "sortino": -0.825784,
+          "maximum_drawdown": -0.295679,
+          "win_rate": 0,
+          "volatility": 0.339149,
+          "total_trades": 2
+        },
+        "rf_classification": {
+          "accuracy": 0.565737,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 153,
+            "HOLD": 1452,
+            "SELL": 122
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 15803.743264,
+          "total_return": 0.580374,
+          "cagr": 0.58286,
+          "sharpe": 1.892747,
+          "sortino": 3.078068,
+          "maximum_drawdown": -0.13091,
+          "win_rate": "NA",
+          "volatility": 0.249825,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 11636.134311,
+          "total_return": 0.163613,
+          "cagr": 0.164219,
+          "sharpe": 0.773471,
+          "sortino": 1.203415,
+          "maximum_drawdown": -0.153807,
+          "win_rate": 0.5,
+          "volatility": 0.196699,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 12917.208186,
+          "total_return": 0.291721,
+          "cagr": 0.292857,
+          "sharpe": 1.435444,
+          "sortino": 2.235851,
+          "maximum_drawdown": -0.095226,
+          "win_rate": 0.72,
+          "volatility": 0.176878,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 12592.512355,
+          "total_return": 0.259251,
+          "cagr": 0.260248,
+          "sharpe": 1.316177,
+          "sortino": 1.990819,
+          "maximum_drawdown": -0.129282,
+          "win_rate": 0.5,
+          "volatility": 0.172878,
+          "total_trades": 2
+        },
+        "rf_classification": {
+          "accuracy": 0.788845,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 192,
+            "HOLD": 1621,
+            "SELL": 165
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 11605.083619,
+          "total_return": 0.160508,
+          "cagr": 0.161102,
+          "sharpe": 0.766378,
+          "sortino": 1.024338,
+          "maximum_drawdown": -0.152186,
+          "win_rate": "NA",
+          "volatility": 0.194859,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 9833.788744,
+          "total_return": -0.016621,
+          "cagr": -0.016678,
+          "sharpe": -0.21046,
+          "sortino": -0.285914,
+          "maximum_drawdown": -0.126559,
+          "win_rate": 0.333333,
+          "volatility": 0.132622,
+          "total_trades": 6
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 8294.71016,
+          "total_return": -0.170529,
+          "cagr": -0.171061,
+          "sharpe": -1.288964,
+          "sortino": -1.532522,
+          "maximum_drawdown": -0.182979,
+          "win_rate": 0.36,
+          "volatility": 0.152436,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10000,
+          "total_return": 0,
+          "cagr": 0,
+          "sharpe": "NA",
+          "sortino": -15.874508,
+          "maximum_drawdown": 0,
+          "win_rate": "NA",
+          "volatility": 0,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.888446,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 218,
+            "HOLD": 1825,
+            "SELL": 186
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.145179,
+          "ci_lower": 0.145179,
+          "ci_upper": 0.145179,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.575529,
+          "ci_lower": 0.575529,
+          "ci_upper": 0.575529,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.940017,
+          "ci_lower": 0.940017,
+          "ci_upper": 0.940017,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.2181,
+          "ci_lower": -0.2181,
+          "ci_upper": -0.2181,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": -0.026192,
+          "ci_lower": -0.026192,
+          "ci_upper": -0.026192,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.287534,
+          "ci_lower": -0.287534,
+          "ci_upper": -0.287534,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.330161,
+          "ci_lower": -0.330161,
+          "ci_upper": -0.330161,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.176552,
+          "ci_lower": -0.176552,
+          "ci_upper": -0.176552,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": -0.046502,
+          "ci_lower": -0.046502,
+          "ci_upper": -0.046502,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.352927,
+          "ci_lower": -0.352927,
+          "ci_upper": -0.352927,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.30585,
+          "ci_lower": -0.30585,
+          "ci_upper": -0.30585,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.179634,
+          "ci_lower": -0.179634,
+          "ci_upper": -0.179634,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.016337,
+          "ci_lower": 0.016337,
+          "ci_upper": 0.016337,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.362693,
+          "ci_lower": 0.362693,
+          "ci_upper": 0.362693,
+          "se": 0,
+          "n_valid": 2,
+          "effective_block_length": 2
+        },
+        "sortino": {
+          "mean": -4.903158,
+          "ci_lower": -4.903158,
+          "ci_upper": -4.903158,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.141654,
+          "ci_lower": -0.141654,
+          "ci_upper": -0.141654,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "MSFT_open_to_open": {
+    "success": true,
+    "ticker": "MSFT",
+    "label_type": "open_to_open",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 6946.534698,
+          "total_return": -0.305347,
+          "cagr": -0.306914,
+          "sharpe": -0.932539,
+          "sortino": -1.282355,
+          "maximum_drawdown": -0.371206,
+          "win_rate": "NA",
+          "volatility": 0.349542,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 7744.321716,
+          "total_return": -0.225568,
+          "cagr": -0.226794,
+          "sharpe": -1.425613,
+          "sortino": -1.907984,
+          "maximum_drawdown": -0.24929,
+          "win_rate": 0,
+          "volatility": 0.18288,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 7393.03584,
+          "total_return": -0.260696,
+          "cagr": -0.262079,
+          "sharpe": -1.205261,
+          "sortino": -1.620878,
+          "maximum_drawdown": -0.260696,
+          "win_rate": 0.4,
+          "volatility": 0.244239,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 7820.921371,
+          "total_return": -0.217908,
+          "cagr": -0.219098,
+          "sharpe": -0.599295,
+          "sortino": -0.837135,
+          "maximum_drawdown": -0.320687,
+          "win_rate": "NA",
+          "volatility": 0.346518,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.613546,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 148,
+            "HOLD": 1470,
+            "SELL": 109
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 15803.743264,
+          "total_return": 0.580374,
+          "cagr": 0.58286,
+          "sharpe": 1.892747,
+          "sortino": 3.078068,
+          "maximum_drawdown": -0.13091,
+          "win_rate": "NA",
+          "volatility": 0.249825,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 11636.134311,
+          "total_return": 0.163613,
+          "cagr": 0.164219,
+          "sharpe": 0.773471,
+          "sortino": 1.203415,
+          "maximum_drawdown": -0.153807,
+          "win_rate": 0.5,
+          "volatility": 0.196699,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 12917.208186,
+          "total_return": 0.291721,
+          "cagr": 0.292857,
+          "sharpe": 1.435444,
+          "sortino": 2.235851,
+          "maximum_drawdown": -0.095226,
+          "win_rate": 0.72,
+          "volatility": 0.176878,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 12149.0352,
+          "total_return": 0.214904,
+          "cagr": 0.215716,
+          "sharpe": 1.702105,
+          "sortino": 3.22662,
+          "maximum_drawdown": -0.054951,
+          "win_rate": 1,
+          "volatility": 0.107015,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.808765,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 186,
+            "HOLD": 1632,
+            "SELL": 160
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 11605.083619,
+          "total_return": 0.160508,
+          "cagr": 0.161102,
+          "sharpe": 0.766378,
+          "sortino": 1.024338,
+          "maximum_drawdown": -0.152186,
+          "win_rate": "NA",
+          "volatility": 0.194859,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 9833.788744,
+          "total_return": -0.016621,
+          "cagr": -0.016678,
+          "sharpe": -0.21046,
+          "sortino": -0.285914,
+          "maximum_drawdown": -0.126559,
+          "win_rate": 0.333333,
+          "volatility": 0.132622,
+          "total_trades": 6
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 8294.71016,
+          "total_return": -0.170529,
+          "cagr": -0.171061,
+          "sharpe": -1.288964,
+          "sortino": -1.532522,
+          "maximum_drawdown": -0.182979,
+          "win_rate": 0.36,
+          "volatility": 0.152436,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10000,
+          "total_return": 0,
+          "cagr": 0,
+          "sharpe": "NA",
+          "sortino": -15.874508,
+          "maximum_drawdown": 0,
+          "win_rate": "NA",
+          "volatility": 0,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.880478,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 215,
+            "HOLD": 1837,
+            "SELL": 177
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.145179,
+          "ci_lower": 0.145179,
+          "ci_upper": 0.145179,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.575529,
+          "ci_lower": 0.575529,
+          "ci_upper": 0.575529,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.940017,
+          "ci_lower": 0.940017,
+          "ci_upper": 0.940017,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.2181,
+          "ci_lower": -0.2181,
+          "ci_upper": -0.2181,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": -0.026192,
+          "ci_lower": -0.026192,
+          "ci_upper": -0.026192,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.287534,
+          "ci_lower": -0.287534,
+          "ci_upper": -0.287534,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.330161,
+          "ci_lower": -0.330161,
+          "ci_upper": -0.330161,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.176552,
+          "ci_lower": -0.176552,
+          "ci_upper": -0.176552,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": -0.046502,
+          "ci_lower": -0.046502,
+          "ci_upper": -0.046502,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.352927,
+          "ci_lower": -0.352927,
+          "ci_upper": -0.352927,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.30585,
+          "ci_lower": -0.30585,
+          "ci_upper": -0.30585,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.179634,
+          "ci_lower": -0.179634,
+          "ci_upper": -0.179634,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": -0.001001,
+          "ci_lower": -0.001001,
+          "ci_upper": -0.001001,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.551405,
+          "ci_lower": 0.551405,
+          "ci_upper": 0.551405,
+          "se": 0,
+          "n_valid": 2,
+          "effective_block_length": 2
+        },
+        "sortino": {
+          "mean": -4.495008,
+          "ci_lower": -4.495008,
+          "ci_upper": -4.495008,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.125213,
+          "ci_lower": -0.125213,
+          "ci_upper": -0.125213,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "GOOGL_close_to_close": {
+    "success": true,
+    "ticker": "GOOGL",
+    "label_type": "close_to_close",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 5957.35275,
+          "total_return": -0.404265,
+          "cagr": -0.406174,
+          "sharpe": -1.21375,
+          "sortino": -1.662699,
+          "maximum_drawdown": -0.435642,
+          "win_rate": "NA",
+          "volatility": 0.385174,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 6669.463648,
+          "total_return": -0.333054,
+          "cagr": -0.334726,
+          "sharpe": -2.029884,
+          "sortino": -2.569146,
+          "maximum_drawdown": -0.333054,
+          "win_rate": 0,
+          "volatility": 0.200806,
+          "total_trades": 8
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 7305.50672,
+          "total_return": -0.269449,
+          "cagr": -0.27087,
+          "sharpe": -1.14105,
+          "sortino": -1.61021,
+          "maximum_drawdown": -0.269449,
+          "win_rate": 0.44,
+          "volatility": 0.264234,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10451.51712,
+          "total_return": 0.045152,
+          "cagr": 0.045438,
+          "sharpe": 0.232461,
+          "sortino": 0.36123,
+          "maximum_drawdown": -0.134085,
+          "win_rate": 0.888889,
+          "volatility": 0.162656,
+          "total_trades": 9
+        },
+        "rf_classification": {
+          "accuracy": 0.593625,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 129,
+            "HOLD": 1461,
+            "SELL": 137
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 16171.287822,
+          "total_return": 0.617129,
+          "cagr": 0.6198,
+          "sharpe": 1.685075,
+          "sortino": 2.555316,
+          "maximum_drawdown": -0.172331,
+          "win_rate": "NA",
+          "volatility": 0.30331,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 10479.722593,
+          "total_return": 0.047972,
+          "cagr": 0.048141,
+          "sharpe": 0.234688,
+          "sortino": 0.333681,
+          "maximum_drawdown": -0.202977,
+          "win_rate": 0.4,
+          "volatility": 0.224,
+          "total_trades": 5
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 17006.671045,
+          "total_return": 0.700667,
+          "cagr": 0.703771,
+          "sharpe": 2.591487,
+          "sortino": 5.142079,
+          "maximum_drawdown": -0.07438,
+          "win_rate": 0.68,
+          "volatility": 0.207263,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 11406.736547,
+          "total_return": 0.140674,
+          "cagr": 0.141189,
+          "sharpe": 1.286776,
+          "sortino": 2.553118,
+          "maximum_drawdown": -0.066358,
+          "win_rate": "NA",
+          "volatility": 0.090897,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.780876,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 171,
+            "HOLD": 1615,
+            "SELL": 192
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 13963.956356,
+          "total_return": 0.396396,
+          "cagr": 0.397998,
+          "sharpe": 1.27482,
+          "sortino": 1.87788,
+          "maximum_drawdown": -0.221164,
+          "win_rate": "NA",
+          "volatility": 0.278966,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 11628.515982,
+          "total_return": 0.162852,
+          "cagr": 0.163454,
+          "sharpe": 0.742677,
+          "sortino": 1.15163,
+          "maximum_drawdown": -0.104434,
+          "win_rate": 0.666667,
+          "volatility": 0.206405,
+          "total_trades": 3
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 8479.628086,
+          "total_return": -0.152037,
+          "cagr": -0.152517,
+          "sharpe": -0.753445,
+          "sortino": -1.049212,
+          "maximum_drawdown": -0.239539,
+          "win_rate": 0.36,
+          "volatility": 0.216131,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10340.721748,
+          "total_return": 0.034072,
+          "cagr": 0.034191,
+          "sharpe": 0.327378,
+          "sortino": 0.520842,
+          "maximum_drawdown": -0.022837,
+          "win_rate": 1,
+          "volatility": 0.045871,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.525896,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 204,
+            "HOLD": 1811,
+            "SELL": 214
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.203087,
+          "ci_lower": 0.203087,
+          "ci_upper": 0.203087,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.582048,
+          "ci_lower": 0.582048,
+          "ci_upper": 0.582048,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.923499,
+          "ci_lower": 0.923499,
+          "ci_upper": 0.923499,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.276379,
+          "ci_lower": -0.276379,
+          "ci_upper": -0.276379,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": -0.040743,
+          "ci_lower": -0.040743,
+          "ci_upper": -0.040743,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.35084,
+          "ci_lower": -0.35084,
+          "ci_upper": -0.35084,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.361278,
+          "ci_lower": -0.361278,
+          "ci_upper": -0.361278,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.213488,
+          "ci_lower": -0.213488,
+          "ci_upper": -0.213488,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.09306,
+          "ci_lower": 0.09306,
+          "ci_upper": 0.09306,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.232331,
+          "ci_lower": 0.232331,
+          "ci_upper": 0.232331,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.827552,
+          "ci_lower": 0.827552,
+          "ci_upper": 0.827552,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.194456,
+          "ci_lower": -0.194456,
+          "ci_upper": -0.194456,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.073299,
+          "ci_lower": 0.073299,
+          "ci_upper": 0.073299,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.615538,
+          "ci_lower": 0.615538,
+          "ci_upper": 0.615538,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.145064,
+          "ci_lower": 1.145064,
+          "ci_upper": 1.145064,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.074427,
+          "ci_lower": -0.074427,
+          "ci_upper": -0.074427,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "GOOGL_open_to_open": {
+    "success": true,
+    "ticker": "GOOGL",
+    "label_type": "open_to_open",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 5957.35275,
+          "total_return": -0.404265,
+          "cagr": -0.406174,
+          "sharpe": -1.21375,
+          "sortino": -1.662699,
+          "maximum_drawdown": -0.435642,
+          "win_rate": "NA",
+          "volatility": 0.385174,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 6669.463648,
+          "total_return": -0.333054,
+          "cagr": -0.334726,
+          "sharpe": -2.029884,
+          "sortino": -2.569146,
+          "maximum_drawdown": -0.333054,
+          "win_rate": 0,
+          "volatility": 0.200806,
+          "total_trades": 8
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 7305.50672,
+          "total_return": -0.269449,
+          "cagr": -0.27087,
+          "sharpe": -1.14105,
+          "sortino": -1.61021,
+          "maximum_drawdown": -0.269449,
+          "win_rate": 0.44,
+          "volatility": 0.264234,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 7909.970859,
+          "total_return": -0.209003,
+          "cagr": -0.210152,
+          "sharpe": -0.615626,
+          "sortino": -0.848751,
+          "maximum_drawdown": -0.348283,
+          "win_rate": 0.333333,
+          "volatility": 0.328446,
+          "total_trades": 3
+        },
+        "rf_classification": {
+          "accuracy": 0.63745,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 137,
+            "HOLD": 1464,
+            "SELL": 126
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 16171.287822,
+          "total_return": 0.617129,
+          "cagr": 0.6198,
+          "sharpe": 1.685075,
+          "sortino": 2.555316,
+          "maximum_drawdown": -0.172331,
+          "win_rate": "NA",
+          "volatility": 0.30331,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 10479.722593,
+          "total_return": 0.047972,
+          "cagr": 0.048141,
+          "sharpe": 0.234688,
+          "sortino": 0.333681,
+          "maximum_drawdown": -0.202977,
+          "win_rate": 0.4,
+          "volatility": 0.224,
+          "total_trades": 5
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 17006.671045,
+          "total_return": 0.700667,
+          "cagr": 0.703771,
+          "sharpe": 2.591487,
+          "sortino": 5.142079,
+          "maximum_drawdown": -0.07438,
+          "win_rate": 0.68,
+          "volatility": 0.207263,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10428.384775,
+          "total_return": 0.042838,
+          "cagr": 0.042989,
+          "sharpe": 0.733311,
+          "sortino": 3.007873,
+          "maximum_drawdown": -0.006746,
+          "win_rate": 1,
+          "volatility": 0.031317,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.776892,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 174,
+            "HOLD": 1624,
+            "SELL": 180
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 13963.956356,
+          "total_return": 0.396396,
+          "cagr": 0.397998,
+          "sharpe": 1.27482,
+          "sortino": 1.87788,
+          "maximum_drawdown": -0.221164,
+          "win_rate": "NA",
+          "volatility": 0.278966,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 11628.515982,
+          "total_return": 0.162852,
+          "cagr": 0.163454,
+          "sharpe": 0.742677,
+          "sortino": 1.15163,
+          "maximum_drawdown": -0.104434,
+          "win_rate": 0.666667,
+          "volatility": 0.206405,
+          "total_trades": 3
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 8479.628086,
+          "total_return": -0.152037,
+          "cagr": -0.152517,
+          "sharpe": -0.753445,
+          "sortino": -1.049212,
+          "maximum_drawdown": -0.239539,
+          "win_rate": 0.36,
+          "volatility": 0.216131,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10709.883329,
+          "total_return": 0.070988,
+          "cagr": 0.071241,
+          "sharpe": 0.849584,
+          "sortino": 1.336037,
+          "maximum_drawdown": -0.026454,
+          "win_rate": 1,
+          "volatility": 0.060195,
+          "total_trades": 3
+        },
+        "rf_classification": {
+          "accuracy": 0.653386,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 204,
+            "HOLD": 1822,
+            "SELL": 203
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.203087,
+          "ci_lower": 0.203087,
+          "ci_upper": 0.203087,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.582048,
+          "ci_lower": 0.582048,
+          "ci_upper": 0.582048,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.923499,
+          "ci_lower": 0.923499,
+          "ci_upper": 0.923499,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.276379,
+          "ci_lower": -0.276379,
+          "ci_upper": -0.276379,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": -0.040743,
+          "ci_lower": -0.040743,
+          "ci_upper": -0.040743,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.35084,
+          "ci_lower": -0.35084,
+          "ci_upper": -0.35084,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": -0.361278,
+          "ci_lower": -0.361278,
+          "ci_upper": -0.361278,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.213488,
+          "ci_lower": -0.213488,
+          "ci_upper": -0.213488,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.09306,
+          "ci_lower": 0.09306,
+          "ci_upper": 0.09306,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.232331,
+          "ci_lower": 0.232331,
+          "ci_upper": 0.232331,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.827552,
+          "ci_lower": 0.827552,
+          "ci_upper": 0.827552,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.194456,
+          "ci_lower": -0.194456,
+          "ci_upper": -0.194456,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": -0.031725,
+          "ci_lower": -0.031725,
+          "ci_upper": -0.031725,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.322423,
+          "ci_lower": 0.322423,
+          "ci_upper": 0.322423,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.165053,
+          "ci_lower": 1.165053,
+          "ci_upper": 1.165053,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.127161,
+          "ci_lower": -0.127161,
+          "ci_upper": -0.127161,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "AMZN_close_to_close": {
+    "success": true,
+    "ticker": "AMZN",
+    "label_type": "close_to_close",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 4963.87763,
+          "total_return": -0.503612,
+          "cagr": -0.505763,
+          "sharpe": -1.233748,
+          "sortino": -1.688245,
+          "maximum_drawdown": -0.505147,
+          "win_rate": "NA",
+          "volatility": 0.490416,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 8822.563191,
+          "total_return": -0.117744,
+          "cagr": -0.118428,
+          "sharpe": -0.49456,
+          "sortino": -0.741868,
+          "maximum_drawdown": -0.246234,
+          "win_rate": 0.25,
+          "volatility": 0.238572,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 6485.585336,
+          "total_return": -0.351441,
+          "cagr": -0.35318,
+          "sharpe": -1.053795,
+          "sortino": -1.428898,
+          "maximum_drawdown": -0.361796,
+          "win_rate": 0.36,
+          "volatility": 0.368173,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 8148.507592,
+          "total_return": -0.185149,
+          "cagr": -0.186183,
+          "sharpe": -0.286853,
+          "sortino": -0.406813,
+          "maximum_drawdown": -0.423616,
+          "win_rate": 0.666667,
+          "volatility": 0.444806,
+          "total_trades": 3
+        },
+        "rf_classification": {
+          "accuracy": 0.498008,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 175,
+            "HOLD": 1401,
+            "SELL": 151
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 18446.454831,
+          "total_return": 0.844645,
+          "cagr": 0.848528,
+          "sharpe": 1.980822,
+          "sortino": 3.161452,
+          "maximum_drawdown": -0.19578,
+          "win_rate": "NA",
+          "volatility": 0.329095,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12179.950045,
+          "total_return": 0.217995,
+          "cagr": 0.21882,
+          "sharpe": 0.893149,
+          "sortino": 1.329956,
+          "maximum_drawdown": -0.164368,
+          "win_rate": 0.333333,
+          "volatility": 0.229945,
+          "total_trades": 3
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 13282.703299,
+          "total_return": 0.32827,
+          "cagr": 0.329566,
+          "sharpe": 1.25241,
+          "sortino": 1.928492,
+          "maximum_drawdown": -0.124685,
+          "win_rate": 0.64,
+          "volatility": 0.234691,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10000,
+          "total_return": 0,
+          "cagr": 0,
+          "sharpe": "NA",
+          "sortino": -15.874508,
+          "maximum_drawdown": 0,
+          "win_rate": "NA",
+          "volatility": 0,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.733068,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 232,
+            "HOLD": 1533,
+            "SELL": 213
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 14796.798301,
+          "total_return": 0.47968,
+          "cagr": 0.481672,
+          "sharpe": 1.478935,
+          "sortino": 2.236016,
+          "maximum_drawdown": -0.194324,
+          "win_rate": "NA",
+          "volatility": 0.280364,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12792.256023,
+          "total_return": 0.279226,
+          "cagr": 0.280308,
+          "sharpe": 1.172003,
+          "sortino": 1.836484,
+          "maximum_drawdown": -0.133352,
+          "win_rate": 0.5,
+          "volatility": 0.214486,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 11203.99493,
+          "total_return": 0.120399,
+          "cagr": 0.120837,
+          "sharpe": 0.567261,
+          "sortino": 0.879039,
+          "maximum_drawdown": -0.086915,
+          "win_rate": 0.56,
+          "volatility": 0.203092,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10000,
+          "total_return": 0,
+          "cagr": 0,
+          "sharpe": "NA",
+          "sortino": -15.874508,
+          "maximum_drawdown": 0,
+          "win_rate": "NA",
+          "volatility": 0,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.749004,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 272,
+            "HOLD": 1717,
+            "SELL": 240
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.273571,
+          "ci_lower": 0.273571,
+          "ci_upper": 0.273571,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.742003,
+          "ci_lower": 0.742003,
+          "ci_upper": 0.742003,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.236408,
+          "ci_lower": 1.236408,
+          "ci_upper": 1.236408,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.298417,
+          "ci_lower": -0.298417,
+          "ci_upper": -0.298417,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": 0.126492,
+          "ci_lower": 0.126492,
+          "ci_upper": 0.126492,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.523531,
+          "ci_lower": 0.523531,
+          "ci_upper": 0.523531,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.808191,
+          "ci_lower": 0.808191,
+          "ci_upper": 0.808191,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.181318,
+          "ci_lower": -0.181318,
+          "ci_upper": -0.181318,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.032409,
+          "ci_lower": 0.032409,
+          "ci_upper": 0.032409,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.255292,
+          "ci_lower": 0.255292,
+          "ci_upper": 0.255292,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.459544,
+          "ci_lower": 0.459544,
+          "ci_upper": 0.459544,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.191132,
+          "ci_lower": -0.191132,
+          "ci_upper": -0.191132,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": -0.061716,
+          "ci_lower": -0.061716,
+          "ci_upper": -0.061716,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": -0.286853,
+          "ci_lower": "NA",
+          "ci_upper": "NA",
+          "se": "NA",
+          "n_valid": 1,
+          "note": "Too few observations for bootstrap"
+        },
+        "sortino": {
+          "mean": -10.718609,
+          "ci_lower": -10.718609,
+          "ci_upper": -10.718609,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.141205,
+          "ci_lower": -0.141205,
+          "ci_upper": -0.141205,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "AMZN_open_to_open": {
+    "success": true,
+    "ticker": "AMZN",
+    "label_type": "open_to_open",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 4963.87763,
+          "total_return": -0.503612,
+          "cagr": -0.505763,
+          "sharpe": -1.233748,
+          "sortino": -1.688245,
+          "maximum_drawdown": -0.505147,
+          "win_rate": "NA",
+          "volatility": 0.490416,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 8822.563191,
+          "total_return": -0.117744,
+          "cagr": -0.118428,
+          "sharpe": -0.49456,
+          "sortino": -0.741868,
+          "maximum_drawdown": -0.246234,
+          "win_rate": 0.25,
+          "volatility": 0.238572,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 6485.585336,
+          "total_return": -0.351441,
+          "cagr": -0.35318,
+          "sharpe": -1.053795,
+          "sortino": -1.428898,
+          "maximum_drawdown": -0.361796,
+          "win_rate": 0.36,
+          "volatility": 0.368173,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 7318.983746,
+          "total_return": -0.268102,
+          "cagr": -0.269516,
+          "sharpe": -0.475638,
+          "sortino": -0.672653,
+          "maximum_drawdown": -0.397242,
+          "win_rate": 1,
+          "volatility": 0.470792,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.446215,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 184,
+            "HOLD": 1399,
+            "SELL": 144
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 18446.454831,
+          "total_return": 0.844645,
+          "cagr": 0.848528,
+          "sharpe": 1.980822,
+          "sortino": 3.161452,
+          "maximum_drawdown": -0.19578,
+          "win_rate": "NA",
+          "volatility": 0.329095,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12179.950045,
+          "total_return": 0.217995,
+          "cagr": 0.21882,
+          "sharpe": 0.893149,
+          "sortino": 1.329956,
+          "maximum_drawdown": -0.164368,
+          "win_rate": 0.333333,
+          "volatility": 0.229945,
+          "total_trades": 3
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 13282.703299,
+          "total_return": 0.32827,
+          "cagr": 0.329566,
+          "sharpe": 1.25241,
+          "sortino": 1.928492,
+          "maximum_drawdown": -0.124685,
+          "win_rate": 0.64,
+          "volatility": 0.234691,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 15036.579771,
+          "total_return": 0.503658,
+          "cagr": 0.505766,
+          "sharpe": 1.495683,
+          "sortino": 2.364587,
+          "maximum_drawdown": -0.174412,
+          "win_rate": 1,
+          "volatility": 0.289672,
+          "total_trades": 1
+        },
+        "rf_classification": {
+          "accuracy": 0.677291,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 240,
+            "HOLD": 1525,
+            "SELL": 213
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 14796.798301,
+          "total_return": 0.47968,
+          "cagr": 0.481672,
+          "sharpe": 1.478935,
+          "sortino": 2.236016,
+          "maximum_drawdown": -0.194324,
+          "win_rate": "NA",
+          "volatility": 0.280364,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 12792.256023,
+          "total_return": 0.279226,
+          "cagr": 0.280308,
+          "sharpe": 1.172003,
+          "sortino": 1.836484,
+          "maximum_drawdown": -0.133352,
+          "win_rate": 0.5,
+          "volatility": 0.214486,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 11203.99493,
+          "total_return": 0.120399,
+          "cagr": 0.120837,
+          "sharpe": 0.567261,
+          "sortino": 0.879039,
+          "maximum_drawdown": -0.086915,
+          "win_rate": 0.56,
+          "volatility": 0.203092,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 10000,
+          "total_return": 0,
+          "cagr": 0,
+          "sharpe": "NA",
+          "sortino": -15.874508,
+          "maximum_drawdown": 0,
+          "win_rate": "NA",
+          "volatility": 0,
+          "total_trades": 0
+        },
+        "rf_classification": {
+          "accuracy": 0.768924,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 284,
+            "HOLD": 1698,
+            "SELL": 247
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.273571,
+          "ci_lower": 0.273571,
+          "ci_upper": 0.273571,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.742003,
+          "ci_lower": 0.742003,
+          "ci_upper": 0.742003,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.236408,
+          "ci_lower": 1.236408,
+          "ci_upper": 1.236408,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.298417,
+          "ci_lower": -0.298417,
+          "ci_upper": -0.298417,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": 0.126492,
+          "ci_lower": 0.126492,
+          "ci_upper": 0.126492,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.523531,
+          "ci_lower": 0.523531,
+          "ci_upper": 0.523531,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.808191,
+          "ci_lower": 0.808191,
+          "ci_upper": 0.808191,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.181318,
+          "ci_lower": -0.181318,
+          "ci_upper": -0.181318,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.032409,
+          "ci_lower": 0.032409,
+          "ci_upper": 0.032409,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.255292,
+          "ci_lower": 0.255292,
+          "ci_upper": 0.255292,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.459544,
+          "ci_lower": 0.459544,
+          "ci_upper": 0.459544,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.191132,
+          "ci_lower": -0.191132,
+          "ci_upper": -0.191132,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.078519,
+          "ci_lower": 0.078519,
+          "ci_upper": 0.078519,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.510023,
+          "ci_lower": 0.510023,
+          "ci_upper": 0.510023,
+          "se": 0,
+          "n_valid": 2,
+          "effective_block_length": 2
+        },
+        "sortino": {
+          "mean": -4.727525,
+          "ci_lower": -4.727525,
+          "ci_upper": -4.727525,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.190551,
+          "ci_lower": -0.190551,
+          "ci_upper": -0.190551,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "TSLA_close_to_close": {
+    "success": true,
+    "ticker": "TSLA",
+    "label_type": "close_to_close",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 3139.147384,
+          "total_return": -0.686085,
+          "cagr": -0.688332,
+          "sharpe": -1.48541,
+          "sortino": -1.939065,
+          "maximum_drawdown": -0.721763,
+          "win_rate": "NA",
+          "volatility": 0.653572,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 9412.459034,
+          "total_return": -0.058754,
+          "cagr": -0.059107,
+          "sharpe": -0.118902,
+          "sortino": -0.162656,
+          "maximum_drawdown": -0.230099,
+          "win_rate": 0.5,
+          "volatility": 0.299875,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 5421.517641,
+          "total_return": -0.457848,
+          "cagr": -0.459902,
+          "sharpe": -1.198177,
+          "sortino": -1.616862,
+          "maximum_drawdown": -0.561399,
+          "win_rate": 0.36,
+          "volatility": 0.447598,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 4429.562553,
+          "total_return": -0.557044,
+          "cagr": -0.559274,
+          "sharpe": -1.48049,
+          "sortino": -1.958387,
+          "maximum_drawdown": -0.557044,
+          "win_rate": 0.222222,
+          "volatility": 0.486861,
+          "total_trades": 18
+        },
+        "rf_classification": {
+          "accuracy": 0.350598,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 397,
+            "HOLD": 990,
+            "SELL": 340
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 21556.22827,
+          "total_return": 1.155623,
+          "cagr": 1.161316,
+          "sharpe": 1.678592,
+          "sortino": 2.594219,
+          "maximum_drawdown": -0.325598,
+          "win_rate": "NA",
+          "volatility": 0.534962,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 11084.270982,
+          "total_return": 0.108427,
+          "cagr": 0.108819,
+          "sharpe": 0.41527,
+          "sortino": 0.599354,
+          "maximum_drawdown": -0.294142,
+          "win_rate": 0.4,
+          "volatility": 0.345475,
+          "total_trades": 5
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 14760.652687,
+          "total_return": 0.476065,
+          "cagr": 0.47804,
+          "sharpe": 1.136944,
+          "sortino": 1.67059,
+          "maximum_drawdown": -0.204259,
+          "win_rate": 0.6,
+          "volatility": 0.397722,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 16899.964053,
+          "total_return": 0.689996,
+          "cagr": 0.693044,
+          "sharpe": 1.742249,
+          "sortino": 3.110234,
+          "maximum_drawdown": -0.193663,
+          "win_rate": 0.5,
+          "volatility": 0.321644,
+          "total_trades": 8
+        },
+        "rf_classification": {
+          "accuracy": 0.47012,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 459,
+            "HOLD": 1100,
+            "SELL": 419
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 17752.221052,
+          "total_return": 0.775222,
+          "cagr": 0.778724,
+          "sharpe": 1.194087,
+          "sortino": 1.976876,
+          "maximum_drawdown": -0.44189,
+          "win_rate": "NA",
+          "volatility": 0.630956,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 15138.642134,
+          "total_return": 0.513864,
+          "cagr": 0.516021,
+          "sharpe": 1.08068,
+          "sortino": 1.632011,
+          "maximum_drawdown": -0.30993,
+          "win_rate": 0.25,
+          "volatility": 0.470902,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 9823.438303,
+          "total_return": -0.017656,
+          "cagr": -0.017716,
+          "sharpe": 0.128574,
+          "sortino": 0.192677,
+          "maximum_drawdown": -0.366017,
+          "win_rate": 0.44,
+          "volatility": 0.435462,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 17255.252786,
+          "total_return": 0.725525,
+          "cagr": 0.728761,
+          "sharpe": 1.555002,
+          "sortino": 2.599672,
+          "maximum_drawdown": -0.178771,
+          "win_rate": 0.454545,
+          "volatility": 0.389256,
+          "total_trades": 11
+        },
+        "rf_classification": {
+          "accuracy": 0.418327,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 527,
+            "HOLD": 1230,
+            "SELL": 472
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.41492,
+          "ci_lower": 0.41492,
+          "ci_upper": 0.41492,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.462423,
+          "ci_lower": 0.462423,
+          "ci_upper": 0.462423,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.877343,
+          "ci_lower": 0.877343,
+          "ci_upper": 0.877343,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.496417,
+          "ci_lower": -0.496417,
+          "ci_upper": -0.496417,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": 0.187846,
+          "ci_lower": 0.187846,
+          "ci_upper": 0.187846,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.459016,
+          "ci_lower": 0.459016,
+          "ci_upper": 0.459016,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.68957,
+          "ci_lower": 0.68957,
+          "ci_upper": 0.68957,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.278057,
+          "ci_lower": -0.278057,
+          "ci_upper": -0.278057,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.000187,
+          "ci_lower": 0.000187,
+          "ci_upper": 0.000187,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.022447,
+          "ci_lower": 0.022447,
+          "ci_upper": 0.022447,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.082135,
+          "ci_lower": 0.082135,
+          "ci_upper": 0.082135,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.377225,
+          "ci_lower": -0.377225,
+          "ci_upper": -0.377225,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.286159,
+          "ci_lower": 0.286159,
+          "ci_upper": 0.286159,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.605587,
+          "ci_lower": 0.605587,
+          "ci_upper": 0.605587,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.250506,
+          "ci_lower": 1.250506,
+          "ci_upper": 1.250506,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.309826,
+          "ci_lower": -0.309826,
+          "ci_upper": -0.309826,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  },
+  "TSLA_open_to_open": {
+    "success": true,
+    "ticker": "TSLA",
+    "label_type": "open_to_open",
+    "n_folds": 3,
+    "n_observations": 2515,
+    "fold_results": [
+      {
+        "fold": 1,
+        "train_size": 1760,
+        "test_size": 251,
+        "test_start": "2021-12-29",
+        "test_end": "2022-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 3139.147384,
+          "total_return": -0.686085,
+          "cagr": -0.688332,
+          "sharpe": -1.48541,
+          "sortino": -1.939065,
+          "maximum_drawdown": -0.721763,
+          "win_rate": "NA",
+          "volatility": 0.653572,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 9412.459034,
+          "total_return": -0.058754,
+          "cagr": -0.059107,
+          "sharpe": -0.118902,
+          "sortino": -0.162656,
+          "maximum_drawdown": -0.230099,
+          "win_rate": 0.5,
+          "volatility": 0.299875,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 5421.517641,
+          "total_return": -0.457848,
+          "cagr": -0.459902,
+          "sharpe": -1.198177,
+          "sortino": -1.616862,
+          "maximum_drawdown": -0.561399,
+          "win_rate": 0.36,
+          "volatility": 0.447598,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 4627.008287,
+          "total_return": -0.537299,
+          "cagr": -0.539504,
+          "sharpe": -1.380254,
+          "sortino": -1.789328,
+          "maximum_drawdown": -0.651671,
+          "win_rate": 0.423077,
+          "volatility": 0.489155,
+          "total_trades": 26
+        },
+        "rf_classification": {
+          "accuracy": 0.314741,
+          "n_train": 1727,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 411,
+            "HOLD": 962,
+            "SELL": 354
+          }
+        }
+      },
+      {
+        "fold": 2,
+        "train_size": 2011,
+        "test_size": 251,
+        "test_start": "2022-12-28",
+        "test_end": "2023-12-27",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 21556.22827,
+          "total_return": 1.155623,
+          "cagr": 1.161316,
+          "sharpe": 1.678592,
+          "sortino": 2.594219,
+          "maximum_drawdown": -0.325598,
+          "win_rate": "NA",
+          "volatility": 0.534962,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 11084.270982,
+          "total_return": 0.108427,
+          "cagr": 0.108819,
+          "sharpe": 0.41527,
+          "sortino": 0.599354,
+          "maximum_drawdown": -0.294142,
+          "win_rate": 0.4,
+          "volatility": 0.345475,
+          "total_trades": 5
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 14760.652687,
+          "total_return": 0.476065,
+          "cagr": 0.47804,
+          "sharpe": 1.136944,
+          "sortino": 1.67059,
+          "maximum_drawdown": -0.204259,
+          "win_rate": 0.6,
+          "volatility": 0.397722,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 19154.805537,
+          "total_return": 0.915481,
+          "cagr": 0.919761,
+          "sharpe": 2.19351,
+          "sortino": 4.023224,
+          "maximum_drawdown": -0.161414,
+          "win_rate": 0.583333,
+          "volatility": 0.311756,
+          "total_trades": 12
+        },
+        "rf_classification": {
+          "accuracy": 0.430279,
+          "n_train": 1978,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 483,
+            "HOLD": 1049,
+            "SELL": 446
+          }
+        }
+      },
+      {
+        "fold": 3,
+        "train_size": 2262,
+        "test_size": 251,
+        "test_start": "2023-12-28",
+        "test_end": "2024-12-26",
+        "buy_hold": {
+          "initial_capital": 10000,
+          "final_value": 17752.221052,
+          "total_return": 0.775222,
+          "cagr": 0.778724,
+          "sharpe": 1.194087,
+          "sortino": 1.976876,
+          "maximum_drawdown": -0.44189,
+          "win_rate": "NA",
+          "volatility": 0.630956,
+          "total_trades": 0
+        },
+        "ma_cross": {
+          "initial_capital": 10000,
+          "final_value": 15138.642134,
+          "total_return": 0.513864,
+          "cagr": 0.516021,
+          "sharpe": 1.08068,
+          "sortino": 1.632011,
+          "maximum_drawdown": -0.30993,
+          "win_rate": 0.25,
+          "volatility": 0.470902,
+          "total_trades": 4
+        },
+        "fixed_exposure": {
+          "initial_capital": 10000,
+          "final_value": 9823.438303,
+          "total_return": -0.017656,
+          "cagr": -0.017716,
+          "sharpe": 0.128574,
+          "sortino": 0.192677,
+          "maximum_drawdown": -0.366017,
+          "win_rate": 0.44,
+          "volatility": 0.435462,
+          "total_trades": 25
+        },
+        "random_forest": {
+          "initial_capital": 10000,
+          "final_value": 14929.61874,
+          "total_return": 0.492962,
+          "cagr": 0.495018,
+          "sharpe": 1.075265,
+          "sortino": 1.803981,
+          "maximum_drawdown": -0.209255,
+          "win_rate": 0.75,
+          "volatility": 0.449378,
+          "total_trades": 16
+        },
+        "rf_classification": {
+          "accuracy": 0.446215,
+          "n_train": 2229,
+          "n_test": 251,
+          "class_distribution": {
+            "BUY": 557,
+            "HOLD": 1159,
+            "SELL": 513
+          }
+        }
+      }
+    ],
+    "aggregated": {
+      "buy_hold": {
+        "total_return": {
+          "mean": 0.41492,
+          "ci_lower": 0.41492,
+          "ci_upper": 0.41492,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.462423,
+          "ci_lower": 0.462423,
+          "ci_upper": 0.462423,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.877343,
+          "ci_lower": 0.877343,
+          "ci_upper": 0.877343,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.496417,
+          "ci_lower": -0.496417,
+          "ci_upper": -0.496417,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "ma_cross": {
+        "total_return": {
+          "mean": 0.187846,
+          "ci_lower": 0.187846,
+          "ci_upper": 0.187846,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.459016,
+          "ci_lower": 0.459016,
+          "ci_upper": 0.459016,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.68957,
+          "ci_lower": 0.68957,
+          "ci_upper": 0.68957,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.278057,
+          "ci_lower": -0.278057,
+          "ci_upper": -0.278057,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "fixed_exposure": {
+        "total_return": {
+          "mean": 0.000187,
+          "ci_lower": 0.000187,
+          "ci_upper": 0.000187,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.022447,
+          "ci_lower": 0.022447,
+          "ci_upper": 0.022447,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 0.082135,
+          "ci_lower": 0.082135,
+          "ci_upper": 0.082135,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.377225,
+          "ci_lower": -0.377225,
+          "ci_upper": -0.377225,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      },
+      "random_forest": {
+        "total_return": {
+          "mean": 0.290381,
+          "ci_lower": 0.290381,
+          "ci_upper": 0.290381,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sharpe": {
+          "mean": 0.629507,
+          "ci_lower": 0.629507,
+          "ci_upper": 0.629507,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "sortino": {
+          "mean": 1.345959,
+          "ci_lower": 1.345959,
+          "ci_upper": 1.345959,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        },
+        "maximum_drawdown": {
+          "mean": -0.34078,
+          "ci_lower": -0.34078,
+          "ci_upper": -0.34078,
+          "se": 0,
+          "n_valid": 3,
+          "effective_block_length": 3
+        }
+      }
+    },
+    "config": {
+      "tickers": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+      "start_date": "2015-01-01",
+      "end_date": "2024-12-31",
+      "n_folds": 4,
+      "train_frac": 0.7,
+      "test_frac": 0.1,
+      "label_horizon": 1,
+      "buy_threshold": 0.02,
+      "sell_threshold": 0.02,
+      "rf_ntree": 200,
+      "rf_mtry": 10,
+      "baseline_exposure": 0.5,
+      "ma_short": 10,
+      "ma_long": 30,
+      "initial_capital": 10000,
+      "transaction_cost": 0.001,
+      "n_bootstrap": 1000,
+      "block_length": 10,
+      "output_dir": "scripts/experiments/output/multi_asset"
+    }
+  }
+}

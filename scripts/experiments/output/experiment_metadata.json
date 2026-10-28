@@ -1,0 +1,19 @@
+{
+  "experiment": "15-run research backtest (PAPER.md sections 9-10)",
+  "assets": ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA"],
+  "strategies": ["MA Cross (50/200)", "RSI (14, 30/70)", "Buy & Hold"],
+  "start_date": "2015-01-01",
+  "end_date": "2025-12-31",
+  "initial_capital": 10000,
+  "transaction_cost": 0,
+  "risk_free_rate": 0.02,
+  "data_source": "Yahoo Finance via quantmod (src='yahoo')",
+  "execution_timestamp": "2026-09-12T16:44:06.317Z",
+  "commit_hash": "ad61da1e3c05b626d02261f7f6c3f59aea6a9d15",
+  "r_version": "4.6.1",
+  "quantmod_version": "0.4.29",
+  "ttr_version": "0.24.4",
+  "xts_version": "0.14.3",
+  "n_observations": [2765, 2765, 2765, 2765, 2765],
+  "execution_convention": "signal generated at the close of t is executed at the OPEN of t+1 (no look-ahead bias); signals on the final candle are never executed; long-only single asset; completed BUY->SELL round trips count as trades; open final position is marked to market but not counted as completed"
+}

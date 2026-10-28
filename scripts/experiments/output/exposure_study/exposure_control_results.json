@@ -1,0 +1,954 @@
+{
+  "metadata": {
+    "experiment": "Phase G.2: Exposure Control Study",
+    "ticker": "AAPL",
+    "period": ["2015-01-01", "2024-12-31"],
+    "horizon": 5,
+    "embargo": 5,
+    "n_folds_requested": 5,
+    "n_folds_usable": 4,
+    "test_frac": 0.1,
+    "transaction_costs": [0, 0.001, 0.002],
+    "n_random_sims": 200,
+    "random_seed": 42,
+    "execution_timestamp": "2026-10-18T08:01:10Z"
+  },
+  "fold_status": {
+    "V1": ["1", "1488", "249", "5", "TRUE", "OK"],
+    "V2": ["2", "1737", "249", "5", "TRUE", "OK"],
+    "V3": ["3", "1986", "249", "5", "TRUE", "OK"],
+    "V4": ["4", "2235", "249", "5", "TRUE", "OK"],
+    "V5": ["5", "2484", "  1", "5", "FALSE", "test_n=1 < 30"]
+  },
+  "label_alignment": {
+    "close_to_close": {
+      "buy": 828,
+      "hold": 1133,
+      "sell": 549
+    },
+    "open_to_open": {
+      "buy": 805,
+      "hold": 1160,
+      "sell": 545
+    },
+    "disagreement_pct": 26.0159
+  },
+  "fold_results": [
+    {
+      "fold_id": 1,
+      "train_n": 1488,
+      "test_n": 249,
+      "test_start": "2021-01-06",
+      "test_end": "2021-12-30",
+      "majority_baseline": 0.4779,
+      "strategies": {
+        "buy_hold": {
+          "cost_0": {
+            "sharpe": 1.1863,
+            "max_drawdown": -0.1864,
+            "total_return": 0.3232,
+            "cagr": 0.3307,
+            "exposure": 0.996,
+            "turnover": 0.9017,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.001": {
+            "sharpe": 1.1824,
+            "max_drawdown": -0.1865,
+            "total_return": 0.3222,
+            "cagr": 0.3297,
+            "exposure": 0.996,
+            "turnover": 0.9025,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.002": {
+            "sharpe": 1.1784,
+            "max_drawdown": -0.1867,
+            "total_return": 0.3212,
+            "cagr": 0.3287,
+            "exposure": 0.996,
+            "turnover": 0.9034,
+            "n_trades": 0,
+            "mean_hold_days": null
+          }
+        },
+        "ma_crossover": {
+          "cost_0": {
+            "sharpe": 0.9932,
+            "max_drawdown": -0.0888,
+            "total_return": 0.1656,
+            "cagr": 0.1692,
+            "exposure": 0.4819,
+            "turnover": 4.8455,
+            "n_trades": 2,
+            "mean_hold_days": 66
+          },
+          "cost_0.001": {
+            "sharpe": 0.9609,
+            "max_drawdown": -0.0909,
+            "total_return": 0.1606,
+            "cagr": 0.1641,
+            "exposure": 0.4819,
+            "turnover": 4.8549,
+            "n_trades": 2,
+            "mean_hold_days": 66
+          },
+          "cost_0.002": {
+            "sharpe": 0.9248,
+            "max_drawdown": -0.0921,
+            "total_return": 0.1543,
+            "cagr": 0.1576,
+            "exposure": 0.4819,
+            "turnover": 4.8407,
+            "n_trades": 2,
+            "mean_hold_days": 66
+          }
+        },
+        "random_forest": {
+          "classification": {
+            "accuracy": 0.3052,
+            "f1": 0.2716,
+            "roc_auc": 0.5048,
+            "majority_baseline": 0.4779
+          },
+          "cost_0": {
+            "sharpe": 0.856,
+            "max_drawdown": -0.1629,
+            "total_return": 0.1955,
+            "cagr": 0.1998,
+            "exposure": 0.8755,
+            "turnover": 8.7003,
+            "n_trades": 4,
+            "mean_hold_days": 17.25
+          },
+          "cost_0.001": {
+            "sharpe": 0.8169,
+            "max_drawdown": -0.1689,
+            "total_return": 0.1867,
+            "cagr": 0.1908,
+            "exposure": 0.8755,
+            "turnover": 8.7079,
+            "n_trades": 4,
+            "mean_hold_days": 17.25
+          },
+          "cost_0.002": {
+            "sharpe": 0.7753,
+            "max_drawdown": -0.1729,
+            "total_return": 0.1754,
+            "cagr": 0.1793,
+            "exposure": 0.8755,
+            "turnover": 8.7329,
+            "n_trades": 4,
+            "mean_hold_days": 17.25
+          }
+        },
+        "xgboost": {
+          "classification": {
+            "accuracy": 0.3414,
+            "f1": 0.342,
+            "roc_auc": 0.5319
+          },
+          "cost_0": {
+            "sharpe": 0.6805,
+            "max_drawdown": -0.0835,
+            "total_return": 0.1082,
+            "cagr": 0.1105,
+            "exposure": 0.4016,
+            "turnover": 75.8669,
+            "n_trades": 38,
+            "mean_hold_days": 3.8158
+          },
+          "cost_0.001": {
+            "sharpe": 0.1211,
+            "max_drawdown": -0.1025,
+            "total_return": 0.027,
+            "cagr": 0.0275,
+            "exposure": 0.4016,
+            "turnover": 75.3817,
+            "n_trades": 38,
+            "mean_hold_days": 3.8158
+          },
+          "cost_0.002": {
+            "sharpe": -0.4387,
+            "max_drawdown": -0.1286,
+            "total_return": -0.0485,
+            "cagr": -0.0495,
+            "exposure": 0.4016,
+            "turnover": 74.9499,
+            "n_trades": 38,
+            "mean_hold_days": 3.8158
+          }
+        },
+        "exposure_matched": {
+          "cost_0": {
+            "sharpe": 1.0147,
+            "max_drawdown": -0.1557,
+            "total_return": 0.2439,
+            "cagr": 0.2494,
+            "exposure": 0.8675,
+            "turnover": 7.8498,
+            "n_trades": 4,
+            "mean_hold_days": 77.75
+          },
+          "cost_0.001": {
+            "sharpe": 0.9737,
+            "max_drawdown": -0.1573,
+            "total_return": 0.2325,
+            "cagr": 0.2377,
+            "exposure": 0.8675,
+            "turnover": 7.8418,
+            "n_trades": 4,
+            "mean_hold_days": 77.75
+          },
+          "cost_0.002": {
+            "sharpe": 0.9399,
+            "max_drawdown": -0.1592,
+            "total_return": 0.2235,
+            "cagr": 0.2285,
+            "exposure": 0.8675,
+            "turnover": 7.8425,
+            "n_trades": 4,
+            "mean_hold_days": 77.75
+          }
+        },
+        "randomized_control": {
+          "n_simulations": 200,
+          "rf_sharpe": 0.856,
+          "rf_max_dd": -0.1629,
+          "p_sharpe": 0.855,
+          "p_max_dd": 0.205,
+          "random_sharpe_mean": 1.0964,
+          "random_sharpe_sd": 0.2318,
+          "random_sharpe_q05": 0.7368,
+          "random_sharpe_q95": 1.464,
+          "random_dd_mean": -0.1769,
+          "random_dd_sd": 0.0188,
+          "random_exposure_mean": 0.8676
+        }
+      }
+    },
+    {
+      "fold_id": 2,
+      "train_n": 1737,
+      "test_n": 249,
+      "test_start": "2021-12-31",
+      "test_end": "2022-12-27",
+      "majority_baseline": 0.4016,
+      "strategies": {
+        "buy_hold": {
+          "cost_0": {
+            "sharpe": -0.2508,
+            "max_drawdown": -0.2813,
+            "total_return": -0.1188,
+            "cagr": -0.1201,
+            "exposure": 0.996,
+            "turnover": 1.0212,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.001": {
+            "sharpe": -0.2534,
+            "max_drawdown": -0.2816,
+            "total_return": -0.1198,
+            "cagr": -0.1211,
+            "exposure": 0.996,
+            "turnover": 1.0223,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.002": {
+            "sharpe": -0.2559,
+            "max_drawdown": -0.2818,
+            "total_return": -0.1208,
+            "cagr": -0.1221,
+            "exposure": 0.996,
+            "turnover": 1.0233,
+            "n_trades": 0,
+            "mean_hold_days": null
+          }
+        },
+        "ma_crossover": {
+          "cost_0": {
+            "sharpe": -0.9323,
+            "max_drawdown": -0.2021,
+            "total_return": -0.1533,
+            "cagr": -0.155,
+            "exposure": 0.3213,
+            "turnover": 8.7821,
+            "n_trades": 4,
+            "mean_hold_days": 26.25
+          },
+          "cost_0.001": {
+            "sharpe": -0.9813,
+            "max_drawdown": -0.2064,
+            "total_return": -0.1608,
+            "cagr": -0.1625,
+            "exposure": 0.3213,
+            "turnover": 8.7794,
+            "n_trades": 4,
+            "mean_hold_days": 26.25
+          },
+          "cost_0.002": {
+            "sharpe": -1.0214,
+            "max_drawdown": -0.2125,
+            "total_return": -0.1681,
+            "cagr": -0.1699,
+            "exposure": 0.3213,
+            "turnover": 8.7942,
+            "n_trades": 4,
+            "mean_hold_days": 26.25
+          }
+        },
+        "random_forest": {
+          "classification": {
+            "accuracy": 0.3213,
+            "f1": 0.3002,
+            "roc_auc": 0.5347,
+            "majority_baseline": 0.4016
+          },
+          "cost_0": {
+            "sharpe": 0.323,
+            "max_drawdown": -0.2094,
+            "total_return": 0.0736,
+            "cagr": 0.0745,
+            "exposure": 0.6185,
+            "turnover": 21.3013,
+            "n_trades": 10,
+            "mean_hold_days": 20.3
+          },
+          "cost_0.001": {
+            "sharpe": 0.2499,
+            "max_drawdown": -0.2104,
+            "total_return": 0.0503,
+            "cagr": 0.0509,
+            "exposure": 0.6185,
+            "turnover": 21.2484,
+            "n_trades": 10,
+            "mean_hold_days": 20.3
+          },
+          "cost_0.002": {
+            "sharpe": 0.1811,
+            "max_drawdown": -0.2122,
+            "total_return": 0.0288,
+            "cagr": 0.0291,
+            "exposure": 0.6185,
+            "turnover": 21.2289,
+            "n_trades": 10,
+            "mean_hold_days": 20.3
+          }
+        },
+        "xgboost": {
+          "classification": {
+            "accuracy": 0.2851,
+            "f1": 0.2864,
+            "roc_auc": 0.4815
+          },
+          "cost_0": {
+            "sharpe": -1.6389,
+            "max_drawdown": -0.4267,
+            "total_return": -0.3246,
+            "cagr": -0.3278,
+            "exposure": 0.4418,
+            "turnover": 91.7139,
+            "n_trades": 47,
+            "mean_hold_days": 3.3617
+          },
+          "cost_0.001": {
+            "sharpe": -2.031,
+            "max_drawdown": -0.4725,
+            "total_return": -0.385,
+            "cagr": -0.3885,
+            "exposure": 0.4418,
+            "turnover": 91.3991,
+            "n_trades": 47,
+            "mean_hold_days": 3.3617
+          },
+          "cost_0.002": {
+            "sharpe": -2.4184,
+            "max_drawdown": -0.5149,
+            "total_return": -0.4405,
+            "cagr": -0.4443,
+            "exposure": 0.4418,
+            "turnover": 91.2596,
+            "n_trades": 47,
+            "mean_hold_days": 3.3617
+          }
+        },
+        "exposure_matched": {
+          "cost_0": {
+            "sharpe": -0.0096,
+            "max_drawdown": -0.209,
+            "total_return": -0.0237,
+            "cagr": -0.024,
+            "exposure": 0.6305,
+            "turnover": 21.5163,
+            "n_trades": 11,
+            "mean_hold_days": 21.3636
+          },
+          "cost_0.001": {
+            "sharpe": -0.0888,
+            "max_drawdown": -0.214,
+            "total_return": -0.0457,
+            "cagr": -0.0462,
+            "exposure": 0.6305,
+            "turnover": 21.5526,
+            "n_trades": 11,
+            "mean_hold_days": 21.3636
+          },
+          "cost_0.002": {
+            "sharpe": -0.1677,
+            "max_drawdown": -0.2165,
+            "total_return": -0.0662,
+            "cagr": -0.067,
+            "exposure": 0.6305,
+            "turnover": 21.466,
+            "n_trades": 11,
+            "mean_hold_days": 21.3636
+          }
+        },
+        "randomized_control": {
+          "n_simulations": 200,
+          "rf_sharpe": 0.323,
+          "rf_max_dd": -0.2094,
+          "p_sharpe": 0.045,
+          "p_max_dd": 0.145,
+          "random_sharpe_mean": -0.3996,
+          "random_sharpe_sd": 0.4779,
+          "random_sharpe_q05": -1.1785,
+          "random_sharpe_q95": 0.3163,
+          "random_dd_mean": -0.2664,
+          "random_dd_sd": 0.0594,
+          "random_exposure_mean": 0.7098
+        }
+      }
+    },
+    {
+      "fold_id": 3,
+      "train_n": 1986,
+      "test_n": 249,
+      "test_start": "2022-12-28",
+      "test_end": "2023-12-22",
+      "majority_baseline": 0.4819,
+      "strategies": {
+        "buy_hold": {
+          "cost_0": {
+            "sharpe": 1.3652,
+            "max_drawdown": -0.1555,
+            "total_return": 0.34,
+            "cagr": 0.3468,
+            "exposure": 0.996,
+            "turnover": 0.8375,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.001": {
+            "sharpe": 1.3619,
+            "max_drawdown": -0.1557,
+            "total_return": 0.339,
+            "cagr": 0.3458,
+            "exposure": 0.996,
+            "turnover": 0.8382,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.002": {
+            "sharpe": 1.3585,
+            "max_drawdown": -0.1558,
+            "total_return": 0.338,
+            "cagr": 0.3448,
+            "exposure": 0.996,
+            "turnover": 0.8389,
+            "n_trades": 0,
+            "mean_hold_days": null
+          }
+        },
+        "ma_crossover": {
+          "cost_0": {
+            "sharpe": 1.5602,
+            "max_drawdown": -0.1181,
+            "total_return": 0.2879,
+            "cagr": 0.2935,
+            "exposure": 0.6185,
+            "turnover": 8.9807,
+            "n_trades": 4,
+            "mean_hold_days": 52.25
+          },
+          "cost_0.001": {
+            "sharpe": 1.5021,
+            "max_drawdown": -0.1223,
+            "total_return": 0.274,
+            "cagr": 0.2793,
+            "exposure": 0.6185,
+            "turnover": 8.9652,
+            "n_trades": 4,
+            "mean_hold_days": 52.25
+          },
+          "cost_0.002": {
+            "sharpe": 1.4518,
+            "max_drawdown": -0.1263,
+            "total_return": 0.2636,
+            "cagr": 0.2688,
+            "exposure": 0.6185,
+            "turnover": 8.9479,
+            "n_trades": 4,
+            "mean_hold_days": 52.25
+          }
+        },
+        "random_forest": {
+          "classification": {
+            "accuracy": 0.3253,
+            "f1": 0.3141,
+            "roc_auc": 0.4788,
+            "majority_baseline": 0.4819
+          },
+          "cost_0": {
+            "sharpe": 2.0804,
+            "max_drawdown": -0.0757,
+            "total_return": 0.3021,
+            "cagr": 0.3081,
+            "exposure": 0.3133,
+            "turnover": 9.9539,
+            "n_trades": 5,
+            "mean_hold_days": 23.8
+          },
+          "cost_0.001": {
+            "sharpe": 1.9962,
+            "max_drawdown": -0.0763,
+            "total_return": 0.2906,
+            "cagr": 0.2963,
+            "exposure": 0.3133,
+            "turnover": 9.9529,
+            "n_trades": 5,
+            "mean_hold_days": 23.8
+          },
+          "cost_0.002": {
+            "sharpe": 1.9027,
+            "max_drawdown": -0.076,
+            "total_return": 0.2752,
+            "cagr": 0.2806,
+            "exposure": 0.3133,
+            "turnover": 9.9442,
+            "n_trades": 5,
+            "mean_hold_days": 23.8
+          }
+        },
+        "xgboost": {
+          "classification": {
+            "accuracy": 0.3695,
+            "f1": 0.3608,
+            "roc_auc": 0.5399
+          },
+          "cost_0": {
+            "sharpe": 1.8464,
+            "max_drawdown": -0.1615,
+            "total_return": 0.3607,
+            "cagr": 0.368,
+            "exposure": 0.49,
+            "turnover": 89.9323,
+            "n_trades": 44,
+            "mean_hold_days": 4.1818
+          },
+          "cost_0.001": {
+            "sharpe": 1.3128,
+            "max_drawdown": -0.1752,
+            "total_return": 0.2465,
+            "cagr": 0.2512,
+            "exposure": 0.49,
+            "turnover": 89.4565,
+            "n_trades": 44,
+            "mean_hold_days": 4.1818
+          },
+          "cost_0.002": {
+            "sharpe": 0.7631,
+            "max_drawdown": -0.1945,
+            "total_return": 0.1398,
+            "cagr": 0.1424,
+            "exposure": 0.49,
+            "turnover": 89.0837,
+            "n_trades": 44,
+            "mean_hold_days": 4.1818
+          }
+        },
+        "exposure_matched": {
+          "cost_0": {
+            "sharpe": 0.377,
+            "max_drawdown": -0.1266,
+            "total_return": 0.0618,
+            "cagr": 0.0629,
+            "exposure": 0.3213,
+            "turnover": 9.8506,
+            "n_trades": 5,
+            "mean_hold_days": 22.2
+          },
+          "cost_0.001": {
+            "sharpe": 0.2984,
+            "max_drawdown": -0.1285,
+            "total_return": 0.0509,
+            "cagr": 0.0518,
+            "exposure": 0.3213,
+            "turnover": 9.8765,
+            "n_trades": 5,
+            "mean_hold_days": 22.2
+          },
+          "cost_0.002": {
+            "sharpe": 0.2255,
+            "max_drawdown": -0.1304,
+            "total_return": 0.041,
+            "cagr": 0.0418,
+            "exposure": 0.3213,
+            "turnover": 9.8947,
+            "n_trades": 5,
+            "mean_hold_days": 22.2
+          }
+        },
+        "randomized_control": {
+          "n_simulations": 200,
+          "rf_sharpe": 2.0804,
+          "rf_max_dd": -0.0757,
+          "p_sharpe": 0.15,
+          "p_max_dd": 0.255,
+          "random_sharpe_mean": 1.0449,
+          "random_sharpe_sd": 0.9487,
+          "random_sharpe_q05": -0.4836,
+          "random_sharpe_q95": 2.5112,
+          "random_dd_mean": -0.0979,
+          "random_dd_sd": 0.0364,
+          "random_exposure_mean": 0.3012
+        }
+      }
+    },
+    {
+      "fold_id": 4,
+      "train_n": 2235,
+      "test_n": 249,
+      "test_start": "2023-12-26",
+      "test_end": "2024-12-19",
+      "majority_baseline": 0.4498,
+      "strategies": {
+        "buy_hold": {
+          "cost_0": {
+            "sharpe": 0.8653,
+            "max_drawdown": -0.165,
+            "total_return": 0.2039,
+            "cagr": 0.2078,
+            "exposure": 0.996,
+            "turnover": 0.9292,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.001": {
+            "sharpe": 0.861,
+            "max_drawdown": -0.1652,
+            "total_return": 0.203,
+            "cagr": 0.2068,
+            "exposure": 0.996,
+            "turnover": 0.93,
+            "n_trades": 0,
+            "mean_hold_days": null
+          },
+          "cost_0.002": {
+            "sharpe": 0.8567,
+            "max_drawdown": -0.1653,
+            "total_return": 0.202,
+            "cagr": 0.2058,
+            "exposure": 0.996,
+            "turnover": 0.9309,
+            "n_trades": 0,
+            "mean_hold_days": null
+          }
+        },
+        "ma_crossover": {
+          "cost_0": {
+            "sharpe": 0.4998,
+            "max_drawdown": -0.1475,
+            "total_return": 0.0873,
+            "cagr": 0.0889,
+            "exposure": 0.4578,
+            "turnover": 8.0619,
+            "n_trades": 4,
+            "mean_hold_days": 41
+          },
+          "cost_0.001": {
+            "sharpe": 0.4349,
+            "max_drawdown": -0.1498,
+            "total_return": 0.0763,
+            "cagr": 0.0777,
+            "exposure": 0.4578,
+            "turnover": 8.0184,
+            "n_trades": 4,
+            "mean_hold_days": 41
+          },
+          "cost_0.002": {
+            "sharpe": 0.3808,
+            "max_drawdown": -0.1538,
+            "total_return": 0.0678,
+            "cagr": 0.069,
+            "exposure": 0.4578,
+            "turnover": 8.0427,
+            "n_trades": 4,
+            "mean_hold_days": 41
+          }
+        },
+        "random_forest": {
+          "classification": {
+            "accuracy": 0.2972,
+            "f1": 0.2896,
+            "roc_auc": 0.5038,
+            "majority_baseline": 0.4498
+          },
+          "cost_0": {
+            "sharpe": 0.3968,
+            "max_drawdown": -0.0933,
+            "total_return": 0.0609,
+            "cagr": 0.062,
+            "exposure": 0.2369,
+            "turnover": 9.7747,
+            "n_trades": 5,
+            "mean_hold_days": 16.8
+          },
+          "cost_0.001": {
+            "sharpe": 0.3247,
+            "max_drawdown": -0.0944,
+            "total_return": 0.0519,
+            "cagr": 0.0528,
+            "exposure": 0.2369,
+            "turnover": 9.7994,
+            "n_trades": 5,
+            "mean_hold_days": 16.8
+          },
+          "cost_0.002": {
+            "sharpe": 0.2368,
+            "max_drawdown": -0.0967,
+            "total_return": 0.0412,
+            "cagr": 0.042,
+            "exposure": 0.2369,
+            "turnover": 9.792,
+            "n_trades": 5,
+            "mean_hold_days": 16.8
+          }
+        },
+        "xgboost": {
+          "classification": {
+            "accuracy": 0.3333,
+            "f1": 0.3264,
+            "roc_auc": 0.4974
+          },
+          "cost_0": {
+            "sharpe": 0.6047,
+            "max_drawdown": -0.1934,
+            "total_return": 0.1143,
+            "cagr": 0.1164,
+            "exposure": 0.4578,
+            "turnover": 87.0944,
+            "n_trades": 44,
+            "mean_hold_days": 3.5
+          },
+          "cost_0.001": {
+            "sharpe": 0.1046,
+            "max_drawdown": -0.2139,
+            "total_return": 0.0229,
+            "cagr": 0.0233,
+            "exposure": 0.4578,
+            "turnover": 86.8442,
+            "n_trades": 44,
+            "mean_hold_days": 3.5
+          },
+          "cost_0.002": {
+            "sharpe": -0.4164,
+            "max_drawdown": -0.2356,
+            "total_return": -0.0642,
+            "cagr": -0.0652,
+            "exposure": 0.4578,
+            "turnover": 86.3414,
+            "n_trades": 44,
+            "mean_hold_days": 3.5
+          }
+        },
+        "exposure_matched": {
+          "cost_0": {
+            "sharpe": 1.3004,
+            "max_drawdown": -0.046,
+            "total_return": 0.1763,
+            "cagr": 0.1796,
+            "exposure": 0.241,
+            "turnover": 9.8224,
+            "n_trades": 5,
+            "mean_hold_days": 17
+          },
+          "cost_0.001": {
+            "sharpe": 1.2112,
+            "max_drawdown": -0.0466,
+            "total_return": 0.1628,
+            "cagr": 0.1658,
+            "exposure": 0.241,
+            "turnover": 9.7735,
+            "n_trades": 5,
+            "mean_hold_days": 17
+          },
+          "cost_0.002": {
+            "sharpe": 1.1329,
+            "max_drawdown": -0.0488,
+            "total_return": 0.1529,
+            "cagr": 0.1557,
+            "exposure": 0.241,
+            "turnover": 9.7878,
+            "n_trades": 5,
+            "mean_hold_days": 17
+          }
+        },
+        "randomized_control": {
+          "n_simulations": 200,
+          "rf_sharpe": 0.3968,
+          "rf_max_dd": -0.0933,
+          "p_sharpe": 0.42,
+          "p_max_dd": 0.405,
+          "random_sharpe_mean": 0.2831,
+          "random_sharpe_sd": 0.8482,
+          "random_sharpe_q05": -1.1689,
+          "random_sharpe_q95": 1.5742,
+          "random_dd_mean": -0.107,
+          "random_dd_sd": 0.0419,
+          "random_exposure_mean": 0.2773
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "classification": {
+      "majority_baseline": {
+        "mean": 0.4528,
+        "sd": 0.037
+      },
+      "rf_accuracy": {
+        "mean": 0.3122,
+        "sd": 0.0133
+      },
+      "rf_roc_auc": {
+        "mean": 0.5055,
+        "sd": 0.0229
+      },
+      "xgb_accuracy": {
+        "mean": 0.3323,
+        "sd": 0.0351
+      },
+      "xgb_roc_auc": {
+        "mean": 0.5127,
+        "sd": 0.0278
+      }
+    },
+    "trading_0pct": [
+      {
+        "sharpe": {
+          "mean": 0.7915
+        },
+        "max_drawdown": {
+          "mean": -0.1971
+        },
+        "total_return": {
+          "mean": 0.1871
+        },
+        "exposure": {
+          "mean": 0.996
+        },
+        "n_trades": {
+          "mean": 0
+        }
+      },
+      {
+        "sharpe": {
+          "mean": 0.5302
+        },
+        "max_drawdown": {
+          "mean": -0.1391
+        },
+        "total_return": {
+          "mean": 0.0969
+        },
+        "exposure": {
+          "mean": 0.4699
+        },
+        "n_trades": {
+          "mean": 3.5
+        }
+      },
+      {
+        "sharpe": {
+          "mean": 0.9141
+        },
+        "max_drawdown": {
+          "mean": -0.1353
+        },
+        "total_return": {
+          "mean": 0.158
+        },
+        "exposure": {
+          "mean": 0.511
+        },
+        "n_trades": {
+          "mean": 6
+        }
+      },
+      {
+        "sharpe": {
+          "mean": 0.3732
+        },
+        "max_drawdown": {
+          "mean": -0.2163
+        },
+        "total_return": {
+          "mean": 0.0646
+        },
+        "exposure": {
+          "mean": 0.4478
+        },
+        "n_trades": {
+          "mean": 43.25
+        }
+      },
+      {
+        "sharpe": {
+          "mean": 0.6706
+        },
+        "max_drawdown": {
+          "mean": -0.1343
+        },
+        "total_return": {
+          "mean": 0.1146
+        },
+        "exposure": {
+          "mean": 0.5151
+        },
+        "n_trades": {
+          "mean": 6.25
+        }
+      }
+    ],
+    "permutation_test": {
+      "mean_p_sharpe": 0.3675,
+      "mean_p_dd": 0.2525
+    },
+    "drawdown_comparison": {
+      "rf_vs_bh": {
+        "mean_improvement": 0.0617,
+        "sd": 0.0258
+      },
+      "rf_vs_exposure_matched": {
+        "mean_improvement": -0.001,
+        "sd": 0.0403
+      }
+    }
+  },
+  "verdict": {
+    "conclusion": "INCONCLUSIVE",
+    "rf_auc_mean": 0.5055,
+    "rf_sharpe_mean": 0.9141,
+    "exp_sharpe_mean": 0.6706,
+    "sharpe_rf_vs_exp": 0.2434,
+    "dd_rf_vs_exp": -0.001,
+    "permutation_p_sharpe": 0.3675,
+    "permutation_p_dd": 0.2525,
+    "explanation": "Results are inconclusive. RF shows some metrics improvement over simple baselines, but the evidence is insufficient to attribute this to predictive power vs. exposure management. Single-asset analysis with limited folds restricts inference."
+  }
+}

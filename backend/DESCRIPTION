@@ -1,0 +1,67 @@
+Package: AlphaForgeInsightBackend
+Type: Package
+Title: AlphaForge Insight R/Plumber Backend
+Version: 0.5.0
+Authors@R: person("Nipun Anand", "Saxena", role = c("aut", "cre"))
+Description: Backend REST API for the AlphaForge Insight Quant Strategy
+    Backtester (Review 1, VIT Software Engineering Project). Phase 1
+    scaffold implemented the GET /health liveness endpoint. Phase 2 adds
+    database persistence (Neon PostgreSQL via DBI/RPostgres) and
+    authentication (bcrypt password hashing, JWT via jose):
+    POST /auth/register, POST /auth/login, GET /auth/me.
+    Phase 3 adds the market-data + technical-indicator layer
+    (quantmod/TTR/xts): GET /stocks/validate and GET /market-data, with
+    SMA/RSI indicator functions (generic periods).
+    Phase 4 adds the strategy engine: centralized validation with documented
+    defaults (STRATEGY_DEFAULTS), MA-crossover/RSI crossing signal generation
+    (no look-ahead), GET /strategies/defaults and JWT-protected
+    POST /strategies/preview.
+    Phase 5 adds the pure backtesting engine and performance-metric layer:
+    backend/analytics/execution.R (t+1-open execution, cash/shares tracking,
+    trade log, equity curve, open-position handling, run_backtest
+    orchestration) and backend/analytics/metrics.R (Total Return, CAGR,
+    Sharpe, Sortino, Maximum Drawdown, Win Rate, Volatility, Total Trades).
+    No API endpoints are added in Phase 5; /backtest/run arrives in Phase 6.
+    Phase 7 adds the Feature-Engineering + ML/DL module
+    (backend/analytics/ml/): leak-free feature construction, supervised
+    BUY/HOLD/SELL labels, chronological splitting, 12 models (logistic
+    regression, LDA, QDA, KNN, naive Bayes, decision tree, random forest,
+    SVM, gradient boosting, XGBoost, MLP, LSTM) behind a common interface,
+    classification + trading evaluation, and a probability-based Top-N
+    portfolio adapter feeding the EXISTING t+1-open backtesting engine via
+    the new JWT-protected /ml/features, /ml/train, /ml/compare, /ml/predict
+    and /ml/backtest endpoints.
+    Later phases add the backtesting engine,
+    performance metrics and persistence.
+License: MIT
+Encoding: UTF-8
+Imports:
+    plumber,
+    jsonlite,
+    httr,
+    DBI,
+    RPostgres,
+    bcrypt,
+    jose,
+    quantmod,
+    TTR,
+    xts,
+    zoo,
+    MASS,
+    FNN,
+    naivebayes,
+    e1071,
+    rpart,
+    randomForest,
+    gbm,
+    xgboost,
+    nnet
+Suggests:
+    quantmod,
+    TTR,
+    PerformanceAnalytics,
+    xts,
+    tidyquant,
+    testthat,
+    keras,
+    tensorflow

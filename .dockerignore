@@ -1,0 +1,13 @@
+.git
+**/node_modules
+frontend/dist
+.env
+.env.*
+!.env.example
+backend/.Renviron
+.Rhistory
+.RData
+.Ruserdata
+**/.DS_Store
+.ai
+.freebuff

@@ -1,0 +1,17 @@
+function (req, res) 
+{
+    origin <- Sys.getenv("CORS_ORIGIN", "http://localhost:5173")
+    res$setHeader("Access-Control-Allow-Origin", origin)
+    res$setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+    res$setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization")
+    if (req$REQUEST_METHOD == "OPTIONS") {
+        res$status <- 200L
+        return(list())
+    }
+    plumber::forward()
+}
+function () 
+{
+    health_handler()
+}
+AlphaForge Insight API starting on 127.0.0.1 port 8125 

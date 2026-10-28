@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "experiment": "ML Research Experiments - Phase G",
+    "date": "2015-01-01",
+    "tickers": ["AAPL", "MSFT", "GOOGL"],
+    "horizon": 5,
+    "thresholds": {
+      "buy": 0.02,
+      "sell": 0.02
+    },
+    "embargo": 5,
+    "n_folds": 5,
+    "random_seed": 42,
+    "execution_timestamp": "2026-10-12T08:23:52Z"
+  },
+  "results": {
+    "AAPL": {
+      "random_forest": {
+        "status": "ok",
+        "classification": {
+          "accuracy": 0.3454,
+          "f1": 0.2836,
+          "precision": 0.3078,
+          "recall": 0.3174,
+          "roc_auc_macro": 0.5146
+        },
+        "backtest": {
+          "initial_capital": 10000,
+          "final_value": 14448.2994,
+          "total_return": 0.4448,
+          "cagr": 0.2046,
+          "sharpe": 0.9514,
+          "sortino": 1.4537,
+          "maximum_drawdown": -0.1673,
+          "win_rate": 0.6,
+          "volatility": 0.1953,
+          "total_trades": 5
+        }
+      },
+      "xgboost": {
+        "status": "ok",
+        "classification": {
+          "accuracy": 0.3293,
+          "f1": 0.324,
+          "precision": 0.3384,
+          "recall": 0.3456,
+          "roc_auc_macro": 0.4929
+        },
+        "backtest": {
+          "initial_capital": 10000,
+          "final_value": 12442.5789,
+          "total_return": 0.2443,
+          "cagr": 0.1169,
+          "sharpe": 0.6382,
+          "sortino": 0.9043,
+          "maximum_drawdown": -0.1279,
+          "win_rate": 0.5169,
+          "volatility": 0.1638,
+          "total_trades": 89
+        }
+      }
+    },
+    "MSFT": {
+      "random_forest": {
+        "status": "ok",
+        "classification": {
+          "accuracy": 0.3956,
+          "f1": 0.3477,
+          "precision": 0.3489,
+          "recall": 0.3467,
+          "roc_auc_macro": 0.5573
+        },
+        "backtest": {
+          "initial_capital": 10000,
+          "final_value": 13291.1798,
+          "total_return": 0.3291,
+          "cagr": 0.1548,
+          "sharpe": 0.8481,
+          "sortino": 1.175,
+          "maximum_drawdown": -0.1307,
+          "win_rate": 0.75,
+          "volatility": 0.1624,
+          "total_trades": 12
+        }
+      },
+      "xgboost": {
+        "status": "ok",
+        "classification": {
+          "accuracy": 0.3092,
+          "f1": 0.3007,
+          "precision": 0.3151,
+          "recall": 0.314,
+          "roc_auc_macro": 0.4833
+        },
+        "backtest": {
+          "initial_capital": 10000,
+          "final_value": 9744.8812,
+          "total_return": -0.0255,
+          "cagr": -0.013,
+          "sharpe": -0.1343,
+          "sortino": -0.1895,
+          "maximum_drawdown": -0.2352,
+          "win_rate": 0.5493,
+          "volatility": 0.1553,
+          "total_trades": 71
+        }
+      }
+    },
+    "GOOGL": {
+      "random_forest": {
+        "status": "ok",
+        "classification": {
+          "accuracy": 0.4297,
+          "f1": 0.3536,
+          "precision": 0.3852,
+          "recall": 0.3758,
+          "roc_auc_macro": 0.5795
+        },
+        "backtest": {
+          "initial_capital": 10000,
+          "final_value": 13377.7483,
+          "total_return": 0.3378,
+          "cagr": 0.1586,
+          "sharpe": 0.6816,
+          "sortino": 0.9691,
+          "maximum_drawdown": -0.1537,
+          "win_rate": 0.5,
+          "volatility": 0.2246,
+          "total_trades": 12
+        }
+      },
+      "xgboost": {
+        "status": "ok",
+        "classification": {
+          "accuracy": 0.3032,
+          "f1": 0.2966,
+          "precision": 0.3063,
+          "recall": 0.3004,
+          "roc_auc_macro": 0.4847
+        },
+        "backtest": {
+          "initial_capital": 10000,
+          "final_value": 12853.4071,
+          "total_return": 0.2853,
+          "cagr": 0.1354,
+          "sharpe": 0.6161,
+          "sortino": 0.9188,
+          "maximum_drawdown": -0.1703,
+          "win_rate": 0.6222,
+          "volatility": 0.2102,
+          "total_trades": 90
+        }
+      }
+    }
+  }
+}

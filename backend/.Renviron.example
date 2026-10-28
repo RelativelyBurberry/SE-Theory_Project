@@ -1,0 +1,50 @@
+# AlphaForge Insight — backend environment variables
+#
+# To configure the API: copy this file to .Renviron in this directory and
+# set the values. .Renviron is in .gitignore — real secrets must NEVER
+# be committed.
+#
+# Alternatively, export these as shell environment variables before running
+# the API (e.g. in PowerShell: $env:DATABASE_URL = "...").
+#
+# The R code loads backend/.Renviron via readRenviron() at startup, so
+# placing secrets in that file is the simplest local workflow.
+
+# --- Server ---------------------------------------------------------------
+PLUMBER_HOST=127.0.0.1
+PLUMBER_PORT=8000
+# Development-only CORS origin (Vite default). Production CORS is tightened
+# during deployment.
+CORS_ORIGIN=http://localhost:5173
+
+# --- Database (Neon PostgreSQL) -------------------------------------------
+# Paste your Neon connection string here (without quotes).
+# Format: postgresql://user:password@ep-xxx.region.aws.neon.tech/dbname?sslmode=require
+# Do NOT commit this file.
+DATABASE_URL=
+
+# --- Authentication (JWT) -------------------------------------------------
+# Generate a long random string for HMAC-SHA256 signing.
+# Example (PowerShell): -join ((65..90) + (97..122) + (48..57) | Get-Random -Count 64 | ForEach-Object {[char]$_})
+JWT_SECRET=
+
+# --- Live News Provider (Marketaux) ----------------------------------------
+# Get your free API token at https://www.marketaux.com/register
+# Free tier: 100 requests/day, 3 articles/request
+MARKETAUX_API_KEY=
+
+# --- Historical Market Data Provider Fallbacks ---------------------------
+# Leave MARKET_DATA_PROVIDER=auto to try configured providers in this order:
+# Twelve Data -> Financial Modeling Prep -> Alpha Vantage -> Stooq -> Yahoo.
+# The first four require API keys; providers without a key are skipped.
+MARKET_DATA_PROVIDER=auto
+TWELVEDATA_API_KEY=
+FMP_API_KEY=
+ALPHAVANTAGE_API_KEY=
+STOOQ_API_KEY=
+# Optional: set this to a persistent mounted disk directory on Render.
+# Without a persistent disk, cache files are lost when the service restarts.
+MARKET_DATA_CACHE_DIR=
+
+# Shared secret for server-to-server access to R market data.
+ALPHAFORGE_INTERNAL_MARKET_DATA_TOKEN=replace_with_a_long_random_secret

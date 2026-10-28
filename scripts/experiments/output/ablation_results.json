@@ -1,0 +1,42 @@
+{
+  "experiment_A": {
+    "stock_only": {
+      "accuracy": 0.3534,
+      "f1": 0.3466,
+      "sharpe": 1.3939,
+      "cagr": 0.2777
+    },
+    "stock_plus_regime": {
+      "accuracy": 0.3253,
+      "f1": 0.3241,
+      "sharpe": 1.3401,
+      "cagr": 0.27
+    }
+  },
+  "experiment_C": {
+    "classes_mode": {
+      "accuracy": 0.3253,
+      "f1": 0.3241,
+      "sharpe": 1.3401,
+      "trades": 93
+    },
+    "probability_mode": {
+      "accuracy": 0.3614,
+      "f1": 0.3562,
+      "sharpe": -3.4937,
+      "trades": 1
+    }
+  },
+  "feature_importance": {
+    "atr_14": 0.1018,
+    "sma_50": 0.0725,
+    "obv": 0.0696,
+    "bb_width": 0.0691,
+    "macd_signal": 0.0615,
+    "macd_hist": 0.0561,
+    "stoch_d": 0.0534,
+    "volume": 0.0471,
+    "rolling_vol_20": 0.0415,
+    "ema20_ema50": 0.0409
+  }
+}
